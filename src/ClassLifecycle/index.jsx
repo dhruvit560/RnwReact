@@ -8,20 +8,20 @@ class LifecycleMethod extends Component {
       date: new Date(),
     };
   }
-  componentDidMount() {
+  
+  componentDidMount = () => {
       setInterval(
           () => {
-            this.tick()
+              this.tick()
           },1000
       )
   }
 
   tick = () => {
       this.setState({
-          date: new Date()
-      });
+          date:new Date()
+      })
   }
-
   render() {
     return (
       <>
