@@ -43,6 +43,7 @@ class User extends Component{
               }
       ]
     }
+    
   }
 
   
@@ -51,11 +52,12 @@ class User extends Component{
       <table>
         <thead>
           <tr>
-            <th className="border border-gray-200 p-3 bg-gray-50">Name</th>
-            <th className="border border-gray-200 p-3 bg-gray-50">Age</th>
-            <th className="border border-gray-200 p-3 bg-gray-50">Salary</th>
-            <th className="border border-gray-200 p-3 bg-gray-50">Bonus</th>
-            <th className="border border-gray-200 p-3 bg-gray-50">Status</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Name</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Age</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Salary</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Bonus</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Status</th>
+            <th className="p-3 border border-gray-200 bg-gray-50">Total</th>
           </tr>
         </thead>
         <tbody>
@@ -63,11 +65,12 @@ class User extends Component{
             this.state.data.map((val,index) => {
               return(
                 <tr>
-                  <td className="border border-gray-200 p-3">{val.name}</td>
-                  <td className="border border-gray-200 p-3">{val.age}</td>
-                  <td className="border border-gray-200 p-3">{val.salary}</td>
-                  <td className="border border-gray-200 p-3">{val.bonus}</td>
-                  <td className="border border-gray-200 p-3">{val.status}</td>
+                  <td className="p-3 border border-gray-200">{val.name}</td>
+                  <td className="p-3 border border-gray-200">{val.age}</td>
+                  <td className="p-3 border border-gray-200">{val.salary}</td>
+                  <td className="p-3 border border-gray-200">{val.bonus}</td>
+                  <td className="p-3 border border-gray-200">{val.status}</td>
+                  <td className="p-3 border border-gray-200"></td>
                 </tr>
               )
             })
